@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import './index.css';
+import Modal from './Modal';
 
 function App() {
+  const [openModal, setOpenModal] = useState(false);
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div>
+      <button 
+      onClick={() => setOpenModal(true)} 
+      className='modalButton'>
+        Modal
+      </button>
+      <Modal 
+      open={openModal} 
+      onClose={() => setOpenModal(false)} />
+      </div>
   );
 }
 
