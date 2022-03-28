@@ -1,3 +1,4 @@
+![REACT MODAL](https://user-images.githubusercontent.com/65420004/160446243-6136479e-2d01-4c31-8d7d-4ee3f1e6781a.jpg)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
